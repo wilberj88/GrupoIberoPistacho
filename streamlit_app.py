@@ -12,6 +12,13 @@ import datetime
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
+st.write('---')
+st.write("""
+**Tecnología Novus Solutions**
+- ⚙️: `Monitores de Operación por Horas y Productos` con `Alarmas de Baja Producción` y `Recomendaciones para más Ventas`
+""")
+st.write('---')
+
 st.title('Novus Mando ⚙️ - GrupoIberoPistacho 🌰')
 st.markdown('Versión Ejemplo Borrador')
 
@@ -21,12 +28,7 @@ option = st.selectbox(
 if option:
     st.write('Datos históricos disponibles para la PLANTA de ', option, 'desde el día/mes/año')
 
-st.write('---')
-st.write("""
-**Tecnología Novus Solutions**
-- ⚙️: `Monitores de Operación por Horas y Productos` con `Alarmas de Baja Producción` y `Recomendaciones para más Ventas`
-""")
-st.write('---')
+
 
 
 
