@@ -88,7 +88,7 @@ st.header("Monitor 📺 de Operación por Productos 🛒")
 col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '709.572€', delta='27Jun4Nov')
 col2.metric("Toneladas Vendidas", "7Millones", "27Jun4Nov")
-col3.metric("Hectáreas Cultivads", "13Millones%", "27Jun4Nov")
+col3.metric("Hectáreas Cultivads", "13Millones", "27Jun4Nov")
 
 
 x1 = np.random.randn(200) - 2
@@ -119,9 +119,9 @@ st.text('3 productos (ID=8,32,33) generan más del 50% de la facturación de los
 st.header("Alarmas de Baja Producción ⚠️")
 
 alarma1, alarma2, alarma3 = st.columns(3)
-alarma1.metric("Productos - vendidos", "1/2/18", "-85%prom")
-alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%prom")
-alarma3.metric("Inventario + rotación", "8-32-33", "485%prom")
+alarma1.metric("Productos con mayores defectos", "1/2/18", "-85%prom")
+alarma2.metric("Horarios de menor producción", "16h.13h.18h", "-73%prom")
+alarma3.metric("Inventario de mayor rotación", "8-32-33", "485%prom")
 
 chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Efectivo", "TarjetaCrédito", "TarjetaDébito"])
 st.area_chart(chart_data)
@@ -156,4 +156,4 @@ st.markdown('CONCLUSIONES RECOMENDACIONES 🧠:')
 st.text('Se puede crecer 117% la facturación si se equlibran las ventas en los horarios de 4pm y 1pm')
 st.text('Se puede aumentar la rentabilidad en 35% si se aumentan las ventas de los productos con ID_007 y ID_004')
 
-st.caption('Todos los análisis son representativos únicamente entre el 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
+st.caption('Todos los análisis son representativos únicamente entre el día/mes/años y el día/mes/año con sus días ☀️ y con sus noches 🌛')
