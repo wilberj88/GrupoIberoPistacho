@@ -29,6 +29,10 @@ st.write('---')
 
 
 
+st.markdown("Otros Monitores 📺 Personalizables: INVERSIONES + EXPLOTACIÓN + CONSULTORÍAS BÁSICAS-PLUS-PREMIUM + LEGALIZACIÓN DE POZOS + REAGRUPACIÓN PARCELARIA + TRATAMIENTOS")
+
+
+
 #MONITOR 1: HORARIOS
 st.header("Monitor 📺 de Operación por Horarios ⏰")
 col1, col2, col3 = st.columns(3)
@@ -44,7 +48,7 @@ df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
 
-st.write("Desagregación geográfica  de las ventas para la hora ", hora_seleccionada, "en las tiendas de Madrid")
+st.write("Desagregación geográfica de PROVEEDORES MÁS ECONÓMICOS para la hora ", hora_seleccionada, "en la Comunidad de Madrid")
 
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
@@ -75,15 +79,16 @@ st.write(
         ))
 
 st.markdown('CONCLUSIONES MONITOR HORAS:')
-st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido de la mañana (8am,9am,10am)')
+st.text('Las horas de mayor producción son en la madrugada (1h,0h,2h), seguido de la mañana (8am,9am,10am)')
+st.text('Los proveedores más económicos requieren transporte de madrugada')
 
 
 #MONITOR 2: PRODUCTOS
 st.header("Monitor 📺 de Operación por Productos 🛒")
 col1, col2, col3 = st.columns(3)
-col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
-col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
-col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
+col1.metric(label ="Ventas Agregadadas", value = '709.572€', delta='27Jun4Nov')
+col2.metric("Toneladas Vendidas", "7Millones", "27Jun4Nov")
+col3.metric("Hectáreas Cultivads", "13Millones%", "27Jun4Nov")
 
 
 x1 = np.random.randn(200) - 2
@@ -93,7 +98,7 @@ x3 = np.random.randn(200) + 2
 # Group data together
 hist_data = [x1, x2, x3]
 
-group_labels = ['Ventas Julio', 'Ventas Agosto', 'Ventas Septiembre']
+group_labels = ['Producción Julio', 'Producción Agosto', 'Producción Septiembre']
 
 # Create distplot with custom bin_size
 fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
@@ -103,15 +108,12 @@ st.plotly_chart(fig, use_container_width=True)
 st.write('Top 3 de mejores productos y horas')
 st.write(pd.DataFrame({
     'ID Productos más vendidos': [8, 32, 33],
-    'Horas de mayores ventas': [1, 0, 2]}))
+    'Horas de mayores producciones': [1, 0, 2]}))
 
 
 
 st.markdown('CONCLUSIONES MONITOR PRODUCTOS:')
-st.text('3 productos (ID=8,32,33) de 38 generan más del 50% de la facturación de los últimos 130 días')
-
-
-st.markdown("Otros Monitores 📺 Personalizables: INVERSIONES + EXPLOTACIÓN + CONSULTORÍAS BÁSICAS-PLUS-PREMIUM + LEGALIZACIÓN DE POZOS + REAGRUPACIÓN PARCELARIA + TRATAMIENTOS")
+st.text('3 productos (ID=8,32,33) generan más del 50% de la facturación de los últimos 130 días')
 
 #ALARMAS
 st.header("Alarmas de Baja Producción ⚠️")
