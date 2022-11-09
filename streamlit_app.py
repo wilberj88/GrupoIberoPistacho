@@ -12,7 +12,7 @@ import datetime
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
-st.title('Novus Mando ⚙️ - GrupoIberoPistacho 🌰')
+st.title('Novus Mando ⚙️ - GrupoIberoPistacho 🌰 - Versión Ejemplo Borrador')
 
 option = st.selectbox(
     'Elige la PLANTA DE PROCESADO de análisis',
