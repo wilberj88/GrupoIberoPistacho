@@ -29,7 +29,7 @@ st.write('---')
 
 
 
-st.markdown("Otros Monitores 📺 Personalizables: INVERSIONES + EXPLOTACIÓN + CONSULTORÍAS BÁSICAS-PLUS-PREMIUM + LEGALIZACIÓN DE POZOS + REAGRUPACIÓN PARCELARIA + TRATAMIENTOS")
+st.markdown("Otros Monitores 📺 Personalizables para Grupo IberoPistacho: INVERSIONES + EXPLOTACIÓN + CONSULTORÍAS BÁSICAS-PLUS-PREMIUM + LEGALIZACIÓN DE POZOS + REAGRUPACIÓN PARCELARIA + TRATAMIENTOS")
 
 
 
