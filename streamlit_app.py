@@ -29,7 +29,7 @@ option = st.selectbox(
     'Elige la PLANTA DE PROCESADO de análisis',
     ('Toledo', 'Talavera', 'Madrid', 'Albacete', 'Vigo'))
 if option:
-    st.write('Datos históricos disponibles para la PLANTA de ', option, 'desde el día/mes/año')
+    st.write('Datos históricos disponibles para la PLANTA de ', option, 'desde el día/mes/año hasta el día/mes/año')
 
 
 
