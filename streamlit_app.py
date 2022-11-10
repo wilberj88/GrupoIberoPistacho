@@ -19,7 +19,7 @@ st.title('Novus Mando ⚙️ - GrupoIberoPistacho 🌰')
 st.write('---')
 st.write("""
 **Tecnología Novus Solutions**
-- ⚙️: `Monitores de Operación por Horas y Productos` con `Alarmas de Baja Producción` y `Recomendaciones para más Ventas`
+- ⚙️: `Monitores de Operación por Horas, de Eficiencia Energética y de Productos` con `Alarmas de Baja Producción e Ineficiencias Energéticas` y `Recomendaciones para más Ventas y Reducción de Gastos Energéticos`
 """)
 st.write('---')
 
@@ -90,7 +90,7 @@ st.text('Los proveedores más económicos requieren transporte de madrugada')
 
 
 #MONITOR 2: PRODUCTOS
-st.header("Monitor 📺 de Operación por Productos 🛒")
+st.header("Monitor 📺 de Operación por Eficiencia Energética ⚡︎")
 col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '709.572€', delta='27Jun4Nov')
 col2.metric("Toneladas Vendidas", "7Millones", "27Jun4Nov")
