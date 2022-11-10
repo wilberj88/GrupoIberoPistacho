@@ -19,7 +19,7 @@ st.title('Novus Mando ⚙️ - GrupoIberoPistacho 🌰')
 st.write('---')
 st.write("""
 **Tecnología Novus Solutions**
-- ⚙️: `Monitores de Operación por Horas, de Eficiencia Energética y de Productos` con `Alarmas de Baja Producción e Ineficiencias Energéticas` y `Recomendaciones para más Ventas y Reducción de Gastos Energéticos`
+- ⚙️: `Monitores de Operación de Produción y Ventas por Horas, de Eficiencia Energética y de Productos` con `Alarmas de Baja Producción e Ineficiencias Energéticas` y `Recomendaciones para más Ventas y Reducción de Gastos Energéticos`
 """)
 st.write('---')
 
