@@ -74,5 +74,5 @@ if picture:
             }
         ],
     }
-  st_echarts(options=acelerometro3)
+st_echarts(options=acelerometro3)
 
