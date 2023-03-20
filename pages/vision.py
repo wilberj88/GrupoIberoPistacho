@@ -57,4 +57,22 @@ def render_basic_radar():
 if picture:
     st.image(picture)
     render_basic_radar()
+    acelerometro3 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 80, "name": "Evaluación"}],
+            }
+        ],
+    }
+  st_echarts(options=acelerometro3)
 
