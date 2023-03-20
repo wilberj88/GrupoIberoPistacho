@@ -19,10 +19,6 @@ st.header("Detección de Cosecha En Tiempo Real💹")
 
 picture = st.camera_input("Fotografía la planta de Pistacho a evaluar")
 
-if picture:
-    st.image(picture)
-    
-
 
 def render_basic_radar():
     option = {
@@ -56,3 +52,9 @@ def render_basic_radar():
         ],
     }
     st_echarts(option, height="500px")
+
+
+if picture:
+    st.image(picture)
+    render_basic_radar()
+
