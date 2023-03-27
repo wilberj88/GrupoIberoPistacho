@@ -33,7 +33,7 @@ with col1:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 90%, "name": "Cosecha"}],
+                "data": [{"value": 90, "name": "Cosecha"}],
             }
         ],
     }
@@ -75,7 +75,7 @@ with col3:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 30%, "name": "Rentabilidad"}],
+                "data": [{"value": 30, "name": "Rentabilidad"}],
             }
         ],
     }
